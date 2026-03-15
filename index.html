@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dodoku — Beta Testers Wanted</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0d2137;
+      color: #e8e8e8;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+    }
+    .icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 22px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .tagline {
+      font-size: 1.1rem;
+      color: #7eb8e0;
+      margin-bottom: 28px;
+    }
+    .description {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #b0c4d8;
+      margin-bottom: 32px;
+      text-align: left;
+    }
+    .description ul {
+      list-style: none;
+      margin-top: 12px;
+    }
+    .description ul li {
+      padding: 4px 0;
+    }
+    .description ul li::before {
+      content: "\25b8 ";
+      color: #7eb8e0;
+    }
+    .cta-box {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 28px 24px;
+      margin-bottom: 24px;
+    }
+    .cta-box h2 {
+      font-size: 1.15rem;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+    .cta-box p {
+      font-size: 0.85rem;
+      color: #8aa8c0;
+      margin-bottom: 18px;
+    }
+    form {
+      display: flex;
+      gap: 10px;
+    }
+    input[type="email"] {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input[type="email"]::placeholder { color: #6a8da8; }
+    input[type="email"]:focus { border-color: #7eb8e0; }
+    button {
+      padding: 12px 22px;
+      background: #2e86c1;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    button:hover { background: #3498db; }
+    .note {
+      font-size: 0.78rem;
+      color: #5a7d96;
+      margin-top: 10px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .feature {
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 8px;
+      padding: 14px 12px;
+      text-align: center;
+    }
+    .feature .num { font-size: 1.4rem; font-weight: 700; color: #7eb8e0; }
+    .feature .label { font-size: 0.78rem; color: #8aa8c0; margin-top: 4px; }
+    .footer {
+      font-size: 0.75rem;
+      color: #3d5a70;
+      margin-top: 32px;
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 1.6rem; }
+      form { flex-direction: column; }
+      .features { grid-template-columns: 1fr 1fr; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="icon.png" alt="Dodoku" class="icon">
+    <h1>Dodoku</h1>
+    <p class="tagline">12 digits. 12 rows. Infinite challenge.</p>
+
+    <div class="features">
+      <div class="feature">
+        <div class="num">12x12</div>
+        <div class="label">Grid Size</div>
+      </div>
+      <div class="feature">
+        <div class="num">Base-12</div>
+        <div class="label">Number System</div>
+      </div>
+      <div class="feature">
+        <div class="num">Daily</div>
+        <div class="label">New Puzzle</div>
+      </div>
+      <div class="feature">
+        <div class="num">Free</div>
+        <div class="label">To Play</div>
+      </div>
+    </div>
+
+    <div class="description">
+      Dodoku is a 12x12 Sudoku puzzle app built on the base-12 (dozenal) number system.
+      Go beyond the standard nine digits and master a grid that uses 0 through 9, plus
+      <strong>Dec</strong> and <strong>El</strong>.
+      <ul>
+        <li>A brand new puzzle every day</li>
+        <li>Previous day's solution revealed daily</li>
+        <li>Track your streaks and personal bests</li>
+        <li>Clean, dark interface designed for focus</li>
+      </ul>
+    </div>
+
+    <div class="cta-box">
+      <h2>Join the Beta</h2>
+      <p>Sign up with your <strong>Gmail address</strong> to get early access on Google Play.</p>
+      <form action="https://formsubmit.co/oxyclear-salvation@proton.me" method="POST">
+        <input type="hidden" name="_subject" value="Dodoku Beta Signup">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://scholarsmith.github.io/dodoku-beta/thanks.html">
+        <input type="email" name="email" placeholder="you@gmail.com" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="note">A Gmail address is required for Google Play beta access.</p>
+    </div>
+
+    <p class="footer">Dodoku &copy; 2026 Personal Touch Service Solutions</p>
+  </div>
+</body>
+</html>
